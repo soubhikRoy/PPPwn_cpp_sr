@@ -10,7 +10,7 @@ C++ rewrite of PPPwn (PlayStation 4 PPPoE RCE) with steps to run from Mac M seri
 - Restart automatically when failing
 - Can be compiled as a library integrated into your application
 
-# Steps to crack ps4 11.00 using MAC silicon (M series)
+# Steps to install goldHen in ps4 11.00 using MAC silicon (M series)
 
 1. Goto [PPPwn_cpp](https://github.com/xfangfang/PPPwn_cpp)
 2. Scroll down until you see ‘Nightly Builds’ and press on the Nightly Link.
