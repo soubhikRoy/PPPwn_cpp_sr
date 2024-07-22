@@ -20,12 +20,12 @@ C++ rewrite of PPPwn (PlayStation 4 PPPoE RCE) with steps to run from Mac M seri
 6. Now goto [GoldHEN_v2.4b17.3](https://github.com/GoldHEN/GoldHEN/releases/tag/2.4b17.2) & download `GoldHEN_v2.4b17.3`, unzip the package & in `GoldHEN_v2.4b17.3/pppnw_stage2` you will get the `stage2_11.00.bin` file.
 7. Now create a folder `PPPwn` inside Downloads folder & copy-paste the pppwn file from step 4, `stage1.bin` from step 5 and `stage2_11.00.bin` from step 6.
 8. You should now have 3 files in `PPPwn` folder - `pppwn` , `Stage1.bin` , `Stage2_11.00.bin`
-9. Make sure you have goldhen.bin on the root of a USB stick and is inserted into the PS4 (get goldhen.bin from GoldHEN_v2.4b17.3 folder that you had earlier downloaded in step 6).
-10. NOTE: USB Stick should be formatted to Exfat, please make sure during formatting the USB stick, you select with the scheme "Master Boot Record" & not with scheme GUI, because otherwise at stage 4 of the PPPwn will be "done" and on the PS4 you will see a notification "PPPwned" but Goldhen won't be installed in your ps4.
+9. Make sure you have `goldhen.bin` on the root of a USB stick and is inserted into the PS4 (get `goldhen.bin` from `GoldHEN_v2.4b17.3` folder that you had earlier downloaded in step 6).
+10. <i>NOTE:</i> USB Stick should be formatted to <b>Exfat</b>, please make sure during formatting the USB stick, you select with the scheme "Master Boot Record" & not with scheme GUI, because otherwise at stage 4 of the PPPwn will be "done" and on the PS4 you will see a notification "PPPwned" but Goldhen won't be installed in your ps4.
 11. Now download [Wireshark](https://www.wireshark.org/download.html) & make sure you download the "mac os arm disk image"
 12. Install Wireshark and then follow the prompts to install ChmodBPF. <br/>This will give bpf root access.
 13. Now connect your Macbook with ps4 using ethernet cable, also don't forget to connect the USB stick to your ps4. <br/>
-Now open Wireshark in your mac & since you're using a Ethernet Adapter you will need to change interface en0 to interface enX - Replace X with number Ethernet Adapter is using, to check use WireShark.
+Now open Wireshark in your mac & since you're using a Ethernet Adapter you will need to change interface `en0` to interface `enX` - Replace X with number Ethernet Adapter is using, to check use WireShark.
 14. To run the exploit for 11.00, copy the following to Terminal:
 15. `sudo <Drag pppwn here - NOT THE FOLDER> --interface en0 --fw 1100 --stage1 "Drag Stage1.bin here" --stage2 "Drag Stage2_11.00.bin here" --auto-retry`<br/>
 Press enter, enter password, press Enter, Select ‘Test Connection’ on PS4.<br/>
